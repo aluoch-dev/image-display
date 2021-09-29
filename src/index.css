@@ -15,19 +15,7 @@ main {
   padding: 0.5rem;
   text-align: center;
 }
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-ul {
-  list-style: none;
-  display: flex;
-}
 
-li {
-  margin-right: 1rem;
-}
 h1 {
   color: #e74c3c;
   margin-bottom: 0.5rem;
@@ -49,8 +37,17 @@ h1 {
     border-radius: 10px;
 }
 
+.submit-button{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    background-color: #e74c3c;
+    border-radius: 4px;
+    color: #ffffff; 
+}
+
 .image-container {
-    display:flex;
+    display:grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     grid-gap: 1rem;
     justify-content: center;
@@ -67,7 +64,8 @@ h1 {
     background: #fff;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     border-radius: 10px;
-    margin: auto;
+    margin: 10px;
+    padding: 25px;
     overflow: hidden;
   }
   .card--avatar {
